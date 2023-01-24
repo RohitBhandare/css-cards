@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .nav ul {
+
+        display: flex;
+        background: #000;
+        color: aliceblue;
+        box-shadow: 2px 2px 7px black;
+    }
+
+    li {
+        padding: 0.8rem;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .cards {
+
+        margin-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+
+
+    }
+
+    .card {
+
+        height: 300px;
+        width: 200px;
+        background: #eee;
+        margin: 20px;
+        align-items: center;
+        box-shadow: 1px 1px 1px #eee;
+        border-radius: 10px;
+
+
+    }
+
+    .card:hover {
+        margin: 10px;
+        transition: 1s ease-in-out;
+    }
+
+    .card-header {
+        height: 100px;
+        background: linear-gradient(purple, violet);
+        box-shadow: 1px 2px 4px purple;
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    img {
+
+        height: 100px;
+        width: auto;
+
+        right: 40%;
+        align-items: center;
+        border-radius: 50%;
+        image-resolution: 500dpi;
+        box-shadow: 2px 2px 5px;
+
+
+
+    }
+
+    .content {
+
+        padding: 20px;
+        font-size: 20px;
+        font-family: cursive;
+        text-align: center;
+        background-image: linear-gradient(green, rgb(82, 225, 82));
+        box-shadow: 1px 2px 4px purple;
+        border-radius: 10px;
+    }
+
+    p {
+        color: #eee;
+
+        text-shadow: 1px 0px 0px #eee;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="cards">
+            <div class="card">
+                <h1 class="card-header">
+                    <img src="https://source.unsplash.com/random/200x200?nature/" alt="">
+                </h1>
+                <p class="content">Hey, My name is Rohit Bhandare student of computer engineering</p>
+            </div>
+            <div class="card">
+                <h1 class="card-header">
+                    <img src="https://source.unsplash.com/random/200x200?animals/" alt="">
+                </h1>
+                <p class="content">Nature is the medicine of the mind.<br>Nature is the best therapist.</p>
+            </div>
+            <div class="card">
+                <h1 class="card-header">
+                    <img src="https://source.unsplash.com/random/200x200?flower/" alt="">
+                </h1>
+                <p class="content">Nature is the art of God.Nature is not a thing, it is a process</p>
+            </div>
+            <div class="card">
+                <h1 class="card-header">
+                    <img src="https://source.unsplash.com/random/200x200?birds/" alt="">
+                </h1>
+                <p class="content">Nature is not a thing, it is a process..Nature is not a thing, it is a process.</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
