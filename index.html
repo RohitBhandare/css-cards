@@ -12,10 +12,14 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
     }
-    html {
-  scroll-behavior: smooth;
-}
+
+    body {
+        height: 100%;
+        background: rgb(43, 69, 4);
+        top: 0;
+    }
 
     .nav ul {
 
@@ -23,6 +27,7 @@
         background: #000;
         color: aliceblue;
         box-shadow: 2px 2px 7px black;
+        position: sticky;
     }
 
     li {
@@ -104,6 +109,23 @@
         color: #eee;
 
         text-shadow: 1px 0px 0px #eee;
+    }
+
+    @media screen and (max-width:800px) {
+
+        .cards {
+
+            flex-direction: row;
+        }
+
+        .card {
+            height: 300px;
+            width: 100%;
+
+
+        }
+
+
     }
 </style>
 
